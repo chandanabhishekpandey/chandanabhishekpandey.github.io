@@ -2189,7 +2189,19 @@ button,
   font-size: 0.9em; }
   #footer .copyright a {
     color: inherit; }
+html, body {
+    height: 100%;
+}
 
+#wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    flex: 1;
+}
 /* Menu */
 #menu ul {
   -moz-user-select: none;
@@ -2269,3 +2281,4 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
