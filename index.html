@@ -18,6 +18,11 @@
 				--accent-dark: #45a29e;
 			}
 
+			/* Smooth Gliding Scroll for Anchor Links */
+			html {
+				scroll-behavior: smooth;
+			}
+
 			/* Base Overrides */
 			body, #wrapper {
 				background-color: var(--bg-main) !important;
@@ -41,6 +46,54 @@
 			}
 			#header {
 				border-bottom: 2px solid rgba(69, 162, 158, 0.3) !important;
+			}
+
+			/* Parallax Banner/Home Section */
+			#home {
+				position: relative;
+				/* The inline style in the HTML tag sets the image */
+				background-attachment: fixed !important; /* This creates the parallax effect! */
+				background-position: center right !important;
+				background-repeat: no-repeat !important;
+				background-size: cover !important;
+				padding: 8em 4em !important;
+				border-radius: 8px;
+				margin-bottom: 3em;
+				border: 1px solid rgba(102, 252, 241, 0.2);
+				box-shadow: 0 0 20px rgba(102, 252, 241, 0.1);
+				overflow: hidden;
+			}
+
+			/* Shadow overlay to keep text readable on the left, fading out to the right */
+			#home::before {
+				content: '';
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: linear-gradient(to right, rgba(11, 12, 16, 0.95) 0%, rgba(11, 12, 16, 0.7) 40%, rgba(11, 12, 16, 0.1) 100%);
+				z-index: 1;
+			}
+
+			#home .content {
+				position: relative;
+				z-index: 2;
+				max-width: 65%; /* Restricts text to the left side */
+			}
+			#home .image.object {
+				display: none; /* Hide default image tag since it's a background now */
+			}
+			
+			/* Adjusting mobile view for parallax text */
+			@media screen and (max-width: 980px) {
+				#home .content {
+					max-width: 100%;
+				}
+				#home::before {
+					background: rgba(11, 12, 16, 0.85); /* Darker overlay for mobile readability */
+				}
+				#home {
+					background-attachment: scroll !important; /* Better mobile performance */
+					padding: 4em 2em !important;
+				}
 			}
 
 			/* Cards for Experience, Research & Blog Posts */
@@ -112,9 +165,6 @@
 				border-radius: 8px;
 				border: 1px solid rgba(102, 252, 241, 0.2);
 			}
-			.image.object img {
-				box-shadow: 0 0 20px rgba(102, 252, 241, 0.2);
-			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -136,8 +186,9 @@
 						</ul>
 					</header>
 
-					<!-- Banner -->
-					<section id="home">
+					<!-- Parallax Banner -->
+					<!-- IMPORTANT: Set your picture path here inside the style tag -->
+					<section id="home" style="background-image: url('images/pic10.jpg');">
 						<div class="content">
 							<header>
 								<h1>Hi, I’m Chandan<br />
@@ -149,10 +200,6 @@
 								<li><a href="#experience" class="button big">Explore My Work</a></li>
 							</ul>
 						</div>
-						<span class="image object">
-							<!-- Replace with your picture -->
-							<img src="images/pic10.jpg" alt="Chandan Pandey" />
-						</span>
 					</section>
 
 					<!-- Experience Section -->
@@ -195,7 +242,7 @@
 						</div>
 					</section>
 
-					<!-- NEW: Blog & Tutorials Section -->
+					<!-- Blog & Tutorials Section -->
 					<section id="blog">
 						<header class="major">
 							<h2>Tech Blog & Tutorials</h2>
@@ -312,7 +359,8 @@
 							<h2>Menu</h2>
 						</header>
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<!-- Updated Menu Links to Point to IDs! -->
+							<li><a href="#home">Home</a></li>
 							<li><a href="#experience">Experience</a></li>
 							<li><a href="#blog">Blog & Tutorials</a></li>
 							<li><a href="#research">Research Focus</a></li>
