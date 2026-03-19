@@ -1,448 +1,353 @@
 <!DOCTYPE HTML>
-
 <html>
 	<head>
-		<title>Chandan Abhishek Pandey</title>
+		<title>Chandan Abhishek Pandey | Research & Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<!-- Custom Techy Dark Theme Overrides -->
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+		<style>
+			/* CSS Variables for Tech Theme */
+			:root {
+				--bg-main: #0b0c10;
+				--bg-secondary: #1f2833;
+				--text-main: #c5c6c7;
+				--accent-color: #66fcf1;
+				--accent-dark: #45a29e;
+			}
+
+			/* Base Overrides */
+			body, #wrapper {
+				background-color: var(--bg-main) !important;
+				color: var(--text-main) !important;
+				font-family: 'Inter', sans-serif !important;
+			}
+			h1, h2, h3, h4, h5, h6, .logo strong {
+				color: var(--accent-color) !important;
+				font-family: 'Fira Code', monospace !important;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			a {
+				color: var(--accent-dark) !important;
+				transition: color 0.3s ease, text-shadow 0.3s ease;
+			}
+			a:hover {
+				color: var(--accent-color) !important;
+				text-shadow: 0 0 8px rgba(102, 252, 241, 0.6);
+				border-bottom-color: transparent !important;
+			}
+			#header {
+				border-bottom: 2px solid rgba(69, 162, 158, 0.3) !important;
+			}
+
+			/* Cards for Experience, Research & Blog Posts */
+			.features article, .posts article {
+				background: rgba(31, 40, 51, 0.6) !important;
+				border: 1px solid rgba(69, 162, 158, 0.2) !important;
+				border-radius: 8px;
+				padding: 2.5em !important;
+				backdrop-filter: blur(5px);
+				transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+			}
+			.features article .icon {
+				color: var(--accent-color) !important;
+				background: rgba(102, 252, 241, 0.1);
+				border-radius: 50%;
+				padding: 0.5em;
+			}
+			.features article:hover, .posts article:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 8px 20px rgba(102, 252, 241, 0.15) !important;
+				border-color: rgba(102, 252, 241, 0.6) !important;
+			}
+
+			/* Button Styling */
+			.button {
+				background: transparent !important;
+				border: 1px solid var(--accent-color) !important;
+				color: var(--accent-color) !important;
+				border-radius: 4px !important;
+				font-family: 'Fira Code', monospace !important;
+				box-shadow: 0 0 5px rgba(102, 252, 241, 0.2) !important;
+				transition: all 0.3s ease !important;
+			}
+			.button:hover {
+				background: rgba(102, 252, 241, 0.1) !important;
+				box-shadow: 0 0 15px rgba(102, 252, 241, 0.5) !important;
+				color: #ffffff !important;
+			}
+
+			/* Publications List */
+			.publications-list {
+				list-style: none;
+				padding-left: 0;
+			}
+			.publications-list li {
+				border-left: 3px solid var(--accent-color);
+				margin-bottom: 20px;
+				background: rgba(31, 40, 51, 0.4);
+				padding: 20px;
+				border-radius: 0 8px 8px 0;
+				transition: background 0.3s ease, transform 0.3s ease;
+			}
+			.publications-list li:hover {
+				background: rgba(31, 40, 51, 0.8);
+				transform: translateX(5px);
+			}
+
+			/* Sidebar Adjustments */
+			#sidebar {
+				background: var(--bg-secondary) !important;
+				border-right: 1px solid rgba(69, 162, 158, 0.2);
+			}
+			#sidebar .inner {
+				background: transparent !important;
+			}
+			
+			/* Glow on Image Objects */
+			.image img {
+				border-radius: 8px;
+				border: 1px solid rgba(102, 252, 241, 0.2);
+			}
+			.image.object img {
+				box-shadow: 0 0 20px rgba(102, 252, 241, 0.2);
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Personal</strong> Website</a>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-									</ul>
-								</header>
+					<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Chandan Pandey</strong> // Researcher</a>
+						<ul class="icons">
+							<li><a href="https://scholar.google.com/citations?user=RxejSKEAAAAJ" class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
+							<li><a href="https://www.linkedin.com/in/chandanabhishekpandey/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</header>
 
-							<!-- Banner -->
-								<section id="home">
-									<div class="content">
-										<header>
-											<h1>Hi, I’m Chandan<br />
-											a Recent Ph.D. Graduate </h1>
-											<p>and Nanofabrication Expert</p>
-										</header>
-										<p>I have completed my Ph.D. in Spintronics at Fert Beijing Research Institute under the supervision of Professor Weisheng Zhao.</p>
-										<ul class="actions">
-											<li><a href="#" class="button big">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image object">
-										<img src="images/pic10.jpg" alt="" />
-									</span>
-								</section>
+					<!-- Banner -->
+					<section id="home">
+						<div class="content">
+							<header>
+								<h1>Hi, I’m Chandan<br />
+								a Physics Postdoc</h1>
+								<p>& Nanofabrication Expert</p>
+							</header>
+							<p>I completed my Ph.D. in Spintronics at the Fert Beijing Research Institute under the supervision of Professor Weisheng Zhao. Currently, I am driving research at CIC nanoGUNE targeting light-matter interactions, magneto-thermo-plasmonics, and advanced nanomagnetic systems.</p>
+							<ul class="actions">
+								<li><a href="#experience" class="button big">Explore My Work</a></li>
+							</ul>
+						</div>
+						<span class="image object">
+							<!-- Replace with your picture -->
+							<img src="images/pic10.jpg" alt="Chandan Pandey" />
+						</span>
+					</section>
 
-							<!-- Section -->
-							<section id="experience">
-								<header class="major">
-									<h2>EXPERIENCE</h2>
-									</header>
-										<div class="features">
-		
-										<article>
-											<span class="icon solid fa-atom"></span>
-											<div class="content">
-											<h3>Postdoctoral Researcher</h3>
-											<p>
-												Experimental physicist at <strong>CIC nanoGUNE</strong>, San Sebastián, working on 
-												<strong>magneto-thermo-plasmonics</strong>, <strong>light–matter interaction</strong>, and 
-												<strong>artificial spin-ice systems</strong>. Focus on nanoscale heat-assisted magnetic phenomena 
-												and their application to emergent quantum and topological states.
-												</p>
-												</div>
-												</article>
+					<!-- Experience Section -->
+					<section id="experience">
+						<header class="major">
+							<h2>EXPERIENCE</h2>
+						</header>
+						<div class="features">
+							<article>
+								<span class="icon solid fa-atom"></span>
+								<div class="content">
+									<h3>Postdoctoral Researcher</h3>
+									<p>Experimental physicist at <strong>CIC nanoGUNE</strong>, San Sebastián, working on <strong>magneto-thermo-plasmonics</strong>, <strong>light–matter interaction</strong>, and <strong>artificial spin-ice systems</strong>. Focus on nanoscale heat-assisted magnetic phenomena and their application to emergent quantum and topological states.</p>
+								</div>
+							</article>
 
-												<article>
-										<span class="icon solid fa-tools"></span>
-											<div class="content">
-											<h3>Nanofabrication & Laboratory In-Charge</h3>
-											<p>
-											Responsible for operation, maintenance, and user training of nanofabrication facilities.
-					Hands-on expertise in <strong>e-beam lithography</strong>, <strong>AJA sputtering systems</strong>,
-					thin-film deposition, and process optimization for spintronic and nanomagnetic devices.
-				</p>
-			</div>
-		</article>
+							<article>
+								<span class="icon solid fa-tools"></span>
+								<div class="content">
+									<h3>Nanofabrication & Laboratory In-Charge</h3>
+									<p>Responsible for operation, maintenance, and user training of nanofabrication facilities. Hands-on expertise in <strong>e-beam lithography</strong>, <strong>AJA sputtering systems</strong>, thin-film deposition, and process optimization for spintronic and nanomagnetic devices.</p>
+								</div>
+							</article>
 
-		<article>
-			<span class="icon solid fa-magnet"></span>
-			<div class="content">
-				<h3>Spintronics & Magnetic Nanodevices Researcher</h3>
-				<p>
-					Extensive experience in <strong>CoFeB/MgO-based MTJs</strong>, antiferromagnetic materials,
-					and nanoscale magnetic characterization using <strong>SQUID-VSM</strong>, <strong>nanoMOKE</strong>,
-					and magneto-optical techniques. Strong background in device physics and experimental design.
-				</p>
-			</div>
-		</article>
+							<article>
+								<span class="icon solid fa-magnet"></span>
+								<div class="content">
+									<h3>Spintronics & Magnetic Nanodevices</h3>
+									<p>Extensive experience in <strong>CoFeB/MgO-based MTJs</strong>, antiferromagnetic materials, and nanoscale magnetic characterization using <strong>SQUID-VSM</strong>, <strong>nanoMOKE</strong>, and magneto-optical techniques.</p>
+								</div>
+							</article>
 
-		<article>
-			<span class="icon solid fa-graduation-cap"></span>
-			<div class="content">
-				<h3>Doctoral Researcher (PhD)</h3>
-				<p>
-					PhD in <strong>Microelectronics and Solid-State Electronics</strong>, focused on 
-					spintronic devices and magnetic tunnel junctions. Research combined 
-					device fabrication, magnetic characterization, and theoretical understanding 
-					of nanoscale magnetic phenomena.
-				</p>
-			</div>
-		</article>
+							<article>
+								<span class="icon solid fa-graduation-cap"></span>
+								<div class="content">
+									<h3>Doctoral Researcher (PhD)</h3>
+									<p>PhD in <strong>Microelectronics and Solid-State Electronics</strong>, focused on spintronic devices and magnetic tunnel junctions. Research combined device fabrication, magnetic characterization, and theoretical understanding of nanoscale phenomena.</p>
+								</div>
+							</article>
+						</div>
+					</section>
 
-	</div>
-</section>
-
-
-							<!-- Section -->
-								<section id="research">
-								<header class="major">
-		<h2>Research Highlights</h2>
-	</header>
-
-	<div class="posts">
-
-		<!-- Postdoc: Thermoplasmonics -->
-		<article>
-			<a href="#" class="image">
-				<img src="images/thermoplasmonics.jpg" alt="Magneto-Thermo-Plasmonics" />
-			</a>
-			<h3>Magneto-Thermo-Plasmonics</h3>
-			<p>
-				Postdoctoral research on plasmon-assisted photothermal heating in magnetic multilayers
-				and nanostructures, with applications to artificial spin-ice systems and nanoscale
-				control of magnetic states.
-			</p>
-			<ul class="actions">
-				<li><a href="#" class="button">Details</a></li>
-			</ul>
-		</article>
-
-		<!-- PhD: CoFeB/MgO Spintronics -->
-		<article>
-			<a href="#" class="image">
-				<img src="images/spintronics.jpg" alt="CoFeB MgO Spintronics" />
-			</a>
-			<h3>CoFeB/MgO Spintronic Devices</h3>
-			<p>
-				PhD research focused on fabrication and characterization of CoFeB/MgO magnetic tunnel
-				junctions, exploring magnetic anisotropy, tunneling magnetoresistance, and device-level
-				spin transport phenomena.
-			</p>
-			<ul class="actions">
-				<li><a href="#" class="button">Details</a></li>
-			</ul>
-		</article>
-
-		<!-- THz Spintronics Collaboration -->
-		<article>
-			<a href="#" class="image">
-				<img src="images/thz_spintronics.jpg" alt="THz Spintronics" />
-			</a>
-			<h3>THz Spintronics (Collaborations)</h3>
-			<p>
-				Collaborative work on ultrafast spin dynamics and THz emission from
-				CoFeB/heavy-metal multilayers, investigating spin-current generation
-				and light–spin interaction at femtosecond timescales.
-			</p>
-			<ul class="actions">
-				<li><a href="#" class="button">Details</a></li>
-			</ul>
-		</article>
-
-		<!-- First-principles & MATLAB -->
-		<article>
-			<a href="#" class="image">
-				<img src="images/first_principles.jpg" alt="First Principles MATLAB" />
-			</a>
-			<h3>First-Principles & MATLAB Modeling</h3>
-			<p>
-				First-principles-inspired modeling and MATLAB code development using
-				<strong>NanoDCAL</strong> for electronic structure, symmetry analysis,
-				and orbital-resolved properties of magnetic and spintronic materials.
-				(Detailed documentation coming soon.)
-			</p>
-			<ul class="actions">
-				<li><a href="#" class="button">Coming Soon</a></li>
-			</ul>
-		</article>
-
-	</div>
-</section>
-							<section id="facilities">
-	<header class="major">
-		<h2>Nanofabrication & Facilities</h2>
-	</header>
-	<p>
-		Experience with e-beam lithography, sputtering systems,
-		thin-film deposition, and advanced magnetic characterization tools.
-	</p>
-</section>
-
-
+					<!-- NEW: Blog & Tutorials Section -->
+					<section id="blog">
+						<header class="major">
+							<h2>Tech Blog & Tutorials</h2>
+						</header>
+						<p>Sharing knowledge from my research journey—from fundamental spintronics insights to advanced software modeling integrations.</p>
+						<div class="posts">
 							
-<section id="publications">
-	<header class="major">
-		<h2>Publications</h2>
-	</header>
+							<article>
+								<a href="#" class="image">
+									<!-- Placeholder image -->
+									<img src="images/blog1.jpg" alt="PhD Spintronics Discussion" />
+								</a>
+								<h3>Inside the PhD: CoFeB/MgO & Spin-Orbit Torque</h3>
+								<p>Deep dives into the research I conducted during my PhD. Expect posts discussing the theoretical constraints, experimental breakthroughs, dead layer reduction methods, and architectural designs of advanced magnetic tunnel junctions.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Read Posts</a></li>
+								</ul>
+							</article>
 
-	<ul class="publications-list">
+							<article>
+								<a href="#" class="image">
+									<img src="images/blog2.jpg" alt="NanoDCAL Tutorials" />
+								</a>
+								<h3>NanoDCAL Code & First-Principles</h3>
+								<p>Comprehensive tutorials, code structures, and guides on utilizing the NanoDCAL software that I mastered during my PhD. We will cover electronic structure mapping, transport properties, and bridging results with MATLAB data analysis.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">View Tutorials</a></li>
+								</ul>
+							</article>
 
-		<li>
-			<p>
-				<strong>Pandey, Chandan Abhishek</strong>, Xiaohui Li, Haiyu Wang, Hangtian Wang, Yingjie Liu, Haihui Zhao, Qing Yang, Tianxiao Nie, Weisheng Zhao.<br>
-				<strong>Enhancing perpendicular magnetic anisotropy through dead layer reduction utilizing precise control of Mg insertions.</strong><br>
-				<em>Journal of Magnetism and Magnetic Materials</em>, 511, 166956 (2020).
-			</p>
-		</li>
-
-		<li>
-			<p>
-				Haiyu Wang, Hao Wu, Jie Zhang, Yingjie Liu, Dongdong Chen, <strong>Chandan Pandey</strong>, Jialiang Yin, Dahai Wei, Na Lei, Shuyuan Shi, et al.<br>
-				<strong>Room temperature energy-efficient spin-orbit torque switching in two-dimensional van der Waals Fe<sub>3</sub>GeTe<sub>2</sub> induced by topological insulators.</strong><br>
-				<em>Nature Communications</em>, 14, 5173 (2023).
-			</p>
-		</li>
-
-		<li>
-			<p>
-				Yongshan Liu, Zhongyang Bai, Yong Xu, Xiaojun Wu, Yun Sun, Helin Li, Tong Sun, Ruru Kong, <strong>Chandan Pandey</strong>, Michael Kraft, et al.<br>
-				<strong>Generation of tailored terahertz waves from monolithic integrated metamaterials onto spintronic terahertz emitters.</strong><br>
-				<em>Nanotechnology</em>, 32(10), 105201 (2020).
-			</p>
-		</li>
-
-		<li>
-			<p>
-				Haiyu Wang, Yingjie Liu, Peichen Wu, Wenjie Hou, Yuhao Jiang, Xiaohui Li, <strong>Chandan Pandey</strong>, Dongdong Chen, Qing Yang, Hangtian Wang, et al.<br>
-				<strong>Above room-temperature ferromagnetism in wafer-scale two-dimensional van der Waals Fe<sub>3</sub>GeTe<sub>2</sub> tailored by a topological insulator.</strong><br>
-				<em>ACS Nano</em>, 14(8), 10045–10053 (2020).
-			</p>
-		</li>
-
-		<li>
-			<p>
-				Zhongyang Bai, Yongshan Liu, Ruru Kong, Tianxiao Nie, Yun Sun, Helin Li, Tong Sun, <strong>Chandan Pandey</strong>, Yining Wang, Haoyi Zhang, et al.<br>
-				<strong>Near-field terahertz sensing of HeLa cells and Pseudomonas based on monolithic integrated metamaterials with a spintronic terahertz emitter.</strong><br>
-				<em>ACS Applied Materials & Interfaces</em>, 12(32), 35895–35902 (2020).
-			</p>
-		</li>
-
-		<li>
-			<p>
-				Fengwei Guo, <strong>Chandan Pandey</strong>, Chun Wang, Tianxiao Nie, Lianggong Wen, Weisheng Zhao, Jungang Miao, Li Wang, Xiaojun Wu.<br>
-				<strong>Generation of highly efficient terahertz radiation in ferromagnetic heterostructures and its application in spintronic terahertz emission microscopy (STEM).</strong><br>
-				<em>OSA Continuum</em>, 3(4), 893–902 (2020).
-			</p>
-		</li>
-
-		<li>
-			<p>
-				Xinhou Chen, Xiaojun Wu, Shengyu Shan, Fengwei Guo, Deyin Kong, Chun Wang, Tianxiao Nie, <strong>Chandan Pandey</strong>, Lianggong Wen, Weisheng Zhao, et al.<br>
-				<strong>Generation and manipulation of chiral broadband terahertz waves from cascade spintronic terahertz emitters.</strong><br>
-				<em>Applied Physics Letters</em>, 115(22), 221104 (2019).
-			</p>
-		</li>
-
-		<li>
-			<p>
-				Bo Wang, Shengyu Shan, Xiaojun Wu, Chun Wang, <strong>Chandan Pandey</strong>, Tianxiao Nie, Weisheng Zhao, Yutong Li, Jungang Miao, Li Wang.<br>
-				<strong>Picosecond nonlinear spintronic dynamics investigated by terahertz emission spectroscopy.</strong><br>
-				<em>Applied Physics Letters</em>, 115(12), 121104 (2019).
-			</p>
-		</li>
-
-		<li>
-			<p>
-				Deyin Kong, Xiaojun Wu, Bo Wang, Tianxiao Nie, Meng Xiao, <strong>Chandan Pandey</strong>, Yang Gao, Lianggong Wen, Weisheng Zhao, Cunjun Ruan, et al.<br>
-				<strong>Broadband spintronic terahertz emitter with magnetic-field manipulated polarizations.</strong><br>
-				<em>Advanced Optical Materials</em>, 7(20), 1900487 (2019).
-			</p>
-		</li>
-
-		<li>
-			<p>
-				Yang Gao, Yanbin He, <strong>Chandan Pandey</strong>, Tianxiao Nie, Chun Wang, Deyin Kong, Bo Wang, Lianggong Wen, Cunjun Ruan, Jungang Miao, et al.<br>
-				<strong>Enhanced spintronic terahertz emission in W/CoFeB heterostructures through annealing effect.</strong><br>
-				<em>IRMMW-THz Conference</em>, IEEE (2019).
-			</p>
-		</li>
-
-		<li>
-			<p>
-				Fengwei Guo, Chun Wang, Xinhou Chen, <strong>Chandan Pandey</strong>, Tianxiao Nie, Jungang Miao, Weisheng Zhao, Li Wang, Xiaojun Wu.<br>
-				<strong>Spintronic terahertz emission regulated by Au nanoparticles.</strong><br>
-				<em>IRMMW-THz Conference</em>, IEEE (2020).
-			</p>
-		</li>
-
-	</ul>
-
-
-
-	<p class="scholar-link">
-		<a href="https://scholar.google.com/citations?user=RxejSKEAAAAJ" target="_blank">
-			View full list on Google Scholar
-		</a>
-	</p>
-</section>
-
-
+							<article>
+								<a href="#" class="image">
+									<img src="images/blog3.jpg" alt="COMSOL Integration" />
+								</a>
+								<h3>COMSOL: Micromagnetics & Photothermal Dynamics</h3>
+								<p>Exploring my active Postdoctoral workflow. Here, I'll document my processes on integrating the COMSOL micromagnetics module with photothermal heating phenomena, mapping how nanostructures respond to ultrashort laser pulses.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Read Posts</a></li>
+								</ul>
+							</article>
 
 						</div>
-					</div>
+					</section>
 
-				<!-- Sidebar -->
-<div id="sidebar">
-	<div class="inner">
+					<!-- Research Highlights Section -->
+					<section id="research">
+						<header class="major">
+							<h2>Research Highlights</h2>
+						</header>
+						<div class="posts">
+							<article>
+								<a href="#" class="image"><img src="images/thermoplasmonics.jpg" alt="Magneto-Thermo-Plasmonics" /></a>
+								<h3>Magneto-Thermo-Plasmonics</h3>
+								<p>Postdoctoral research on plasmon-assisted photothermal heating in magnetic multilayers and nanostructures, with applications to artificial spin-ice systems and nanoscale control of magnetic states.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Details</a></li>
+								</ul>
+							</article>
 
-		<!-- Search -->
-		<section id="search" class="alt">
-			<form method="get" action="#">
-				<input type="text" name="query" id="query" placeholder="Search research..." />
-			</form>
-		</section>
+							<article>
+								<a href="#" class="image"><img src="images/spintronics.jpg" alt="CoFeB MgO Spintronics" /></a>
+								<h3>CoFeB/MgO Spintronic Devices</h3>
+								<p>PhD research focused on fabrication and characterization of CoFeB/MgO magnetic tunnel junctions, exploring magnetic anisotropy, and device-level spin transport phenomena.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Details</a></li>
+								</ul>
+							</article>
 
-		<!-- Menu -->
-		<nav id="menu">
-			<header class="major">
-				<h2>Menu</h2>
-			</header>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="#research">Research Highlights</a></li>
-				<li><a href="#publications">Publications</a></li>
-				<li><a href="#facilities">Nanofabrication & Facilities</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+							<article>
+								<a href="#" class="image"><img src="images/thz_spintronics.jpg" alt="THz Spintronics" /></a>
+								<h3>THz Spintronics (Collaborations)</h3>
+								<p>Collaborative work on ultrafast spin dynamics and THz emission from CoFeB/heavy-metal multilayers, investigating spin-current generation at femtosecond timescales.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Details</a></li>
+								</ul>
+							</article>
+						</div>
+					</section>
 
-		<!-- Research Focus -->
-		<section id="focus">
-			<header class="major">
-				<h2>Research Focus</h2>
-			</header>
-			<div class="mini-posts">
+					<!-- Publications Section -->
+					<section id="publications">
+						<header class="major">
+							<h2>Select Publications</h2>
+						</header>
+						<ul class="publications-list">
+							<li><p><strong>C. A. Pandey</strong>, X. Li, et al. <br><strong>Enhancing perpendicular magnetic anisotropy through dead layer reduction utilizing precise control of Mg insertions.</strong><br><em>Journal of Magnetism and Magnetic Materials</em>, 511, 166956 (2020).</p></li>
+							<li><p>H. Wang, ... <strong>C. Pandey</strong>, et al. <br><strong>Room temperature energy-efficient spin-orbit torque switching in two-dimensional van der Waals Fe<sub>3</sub>GeTe<sub>2</sub> induced by topological insulators.</strong><br><em>Nature Communications</em>, 14, 5173 (2023).</p></li>
+							<li><p>Y. Liu, ... <strong>C. Pandey</strong>, et al. <br><strong>Generation of tailored terahertz waves from monolithic integrated metamaterials onto spintronic terahertz emitters.</strong><br><em>Nanotechnology</em>, 32(10), 105201 (2020).</p></li>
+							<li><p>H. Wang, ... <strong>C. Pandey</strong>, et al. <br><strong>Above room-temperature ferromagnetism in wafer-scale two-dimensional van der Waals Fe<sub>3</sub>GeTe<sub>2</sub> tailored by a topological insulator.</strong><br><em>ACS Nano</em>, 14(8), 10045–10053 (2020).</p></li>
+							<li><p>F. Guo, <strong>C. Pandey</strong>, et al. <br><strong>Generation of highly efficient terahertz radiation in ferromagnetic heterostructures and its application in spintronic terahertz emission microscopy (STEM).</strong><br><em>OSA Continuum</em>, 3(4), 893–902 (2020).</p></li>
+						</ul>
+						<p class="scholar-link" style="margin-top: 2em;">
+							<a href="https://scholar.google.com/citations?user=RxejSKEAAAAJ" target="_blank" class="button">View Full List on Google Scholar</a>
+						</p>
+					</section>
 
-				<article>
-					<a href="#" class="image">
-						<img src="images/thermoplasmonics.jpg" alt="Thermoplasmonics" />
-					</a>
-					<p>
-						<strong>Magneto-Thermo-Plasmonics</strong><br />
-						Photothermal control of magnetic nanostructures and artificial spin-ice systems.
-					</p>
-				</article>
-
-				<article>
-					<a href="#" class="image">
-						<img src="images/spintronics.jpg" alt="Spintronics" />
-					</a>
-					<p>
-						<strong>Spintronics</strong><br />
-						CoFeB/MgO MTJs, antiferromagnets, and nanoscale magnetic devices.
-					</p>
-				</article>
-
-				<article>
-					<a href="#" class="image">
-						<img src="images/thz_spintronics.jpg" alt="THz Spintronics" />
-					</a>
-					<p>
-						<strong>THz Spin Dynamics</strong><br />
-						Ultrafast spin currents and THz emission in HM/FM multilayers.
-					</p>
-				</article>
-
+				</div>
 			</div>
-		</section>
 
-		<!-- Contact -->
-		<section id="contact">
-			<header class="major">
-				<h2>Get in Touch</h2>
-			</header>
-			<p>
-				Open to collaborations in spintronics, nanomagnetism,
-				and light–matter interaction at the nanoscale.
-			</p>
-			<ul class="contact">
-				<li class="icon solid fa-envelope">
-					<a href="mailto:c.pandey@nanogune.eu">c.pandey@nanogune.eu</a>
-				</li>
-				<li class="icon solid fa-map-marker-alt">
-					CIC nanoGUNE, San Sebastián, Spain
-				</li>
-				<li class="icon brands fa-linkedin">
-					<a href="https://www.linkedin.com/in/chandanabhishekpandey/">linkedin.com/in/chandanabhishekpandey</a>
-				</li>
-				<li class="icon brands fa-github">
-					<a href="https://github.com/chandanabhishekpandey/">GitHub</a>
-				</li>
-			</ul>
-		</section>
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner">
 
-	</div>
-	</div>
-					</div>
+					<!-- Search -->
+					<section id="search" class="alt">
+						<form method="get" action="#">
+							<input type="text" name="query" id="query" placeholder="Search research & posts..." style="background: rgba(11, 12, 16, 0.8); border: 1px solid var(--accent-dark); color: var(--accent-color);" />
+						</form>
+					</section>
 
+					<!-- Menu -->
+					<nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#experience">Experience</a></li>
+							<li><a href="#blog">Blog & Tutorials</a></li>
+							<li><a href="#research">Research Focus</a></li>
+							<li><a href="#publications">Publications</a></li>
+						</ul>
+					</nav>
 
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
+					<!-- Contact -->
+					<section id="contact">
+						<header class="major">
+							<h2>Get in Touch</h2>
+						</header>
+						<p>Open to collaborations in spintronics, nanomagnetism, and light–matter interaction at the nanoscale.</p>
+						<ul class="contact">
+							<li class="icon solid fa-envelope"><a href="mailto:c.pandey@nanogune.eu">c.pandey@nanogune.eu</a></li>
+							<li class="icon solid fa-map-marker-alt">CIC nanoGUNE<br />San Sebastián, Spain</li>
+							<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/chandanabhishekpandey/">linkedin.com/in/chandanabhishekpandey</a></li>
+						</ul>
+					</section>
 
-						
-    
-</div>
+					<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Chandan Pandey. Built on <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+				</div>
+			</div>
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
